@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component will render 1`] = `
+<div
+  className="home-wrapper"
+>
+  <div
+    className="tile is-parent is-vertical text-centered"
+  >
+    <article
+      className="streched"
+    >
+      <p
+        className="title"
+      >
+        WELCOME
+      </p>
+      <p
+        className="subtitle"
+      >
+        You will be preseneted with 10 true or false questions.
+      </p>
+    </article>
+  </div>
+  <div
+    className="tile is-parent is-vertical text-centered"
+  >
+    <article
+      className="tile is-child notification is-custom streched"
+    >
+      <p
+        className="title"
+      >
+        Can you score 100% ?
+      </p>
+    </article>
+  </div>
+  <div
+    className="tile is-parent is-vertical text-centered"
+  >
+    <article
+      className="streched"
+    >
+      <a
+        className="button is-warning is-outlined"
+        onClick={[Function]}
+      >
+        BEGIN
+      </a>
+    </article>
+  </div>
+</div>
+`;

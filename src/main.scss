@@ -1,0 +1,259 @@
+@import "~bulma-dracula/src/bulma-dracula.scss";
+
+$theme: #44475a;
+$lightTheme:#4f5268;
+$selected: #6272a4;
+$text: #f8f8f2;
+$cyan: #8be9fd;
+$main:#282a36;
+
+html,
+body,
+#app,
+#app>div {
+  height: 100%;
+}
+
+.game-padding {
+  padding: .75rem 25%;
+}
+
+.fixed-scroll {
+  height: 100%;
+  overflow: scroll;
+}
+
+.answer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.not-streched {
+  display: block !important;
+}
+
+.streched {
+  padding: .75rem 0rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#root {
+  height: 100%;
+}
+
+.three-canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.home-wrapper {
+  padding: 0 25%;
+  z-index: 1000;
+}
+
+.home-wrapper,
+.main-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+input,
+select {
+  color: $theme;
+  background-color: $dracula-bg !important;
+}
+
+.modal-card {
+  border: 1px solid lighten($main, 10%);
+
+  .modal-card-body {
+    background-color: lighten($main, 10%);
+    padding: 20px;
+  }
+
+  .modal-card-head,
+  .modal-card-foot {
+    border: none;
+  }
+}
+
+.columns {
+  margin-left: -0.75rem;
+  margin-right: 0;
+  margin-top: -0.75rem;
+}
+
+.column.is-2.aside {
+  width: 100%;
+  transition: all .5s;
+}
+
+.column.is-2.aside.shrink {
+  width: 65px;
+}
+
+.nav-tag {
+  padding-right: 30px;
+}
+
+.tag-notif {
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+
+  @media (max-width: 768px) {
+    margin-left: -2px;
+  }
+}
+
+.hero {
+  background-color: $theme;
+}
+
+.navbar {
+  background: $theme;
+
+  &-item {
+    background-color: $theme;
+    color: $text !important;
+
+    &.is-active {
+      background-color: $selected !important;
+      color: $text !important;
+    }
+
+    &:hover {
+      background-color: $selected !important;
+      color: $text !important;
+    }
+  }
+
+  .is--brand {
+    &:hover {
+      background-color: $theme !important;
+    }
+  }
+
+  &-brand-logo {
+    // max-height: 3rem !important;
+    background-color: $theme;
+    border-radius: .25em;
+    padding: .25em;
+  }
+
+  &-dropdown {
+    background-color: $theme;
+
+    .navbar-item {
+      background-color: $theme;
+    }
+  }
+
+  &-burger {
+    background-color: $theme !important;
+    border: 0;
+
+    span {
+      background-color: $cyan;
+    }
+  }
+
+  &-link {
+    color: $text;
+
+    figure {
+      img {
+        border-radius: 50%;
+        // max-height: 2em;
+      }
+    }
+
+    &:hover {
+      background-color: $theme;
+    }
+  }
+}
+
+
+
+.message.is-dark {
+  .message-body {
+    background-color: lighten($theme, 10%);
+    padding: .25em .3em;
+  }
+
+  .message-header {
+    &:hover {
+      background-color: $main;
+    }
+  }
+}
+
+.field {
+  &.is-horizontal {
+    display: flex;
+    align-items: center !important;
+  }
+}
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1088px) {
+
+  .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: $theme;
+  }
+}
+
+// navigation left area
+.aside {
+  background: $theme;
+  padding: 2em .2em 0 1em;
+
+  a {
+    color: $text;
+  }
+
+  .menu-list {
+    li {
+      margin-top: .5em;
+    }
+  }
+}
+
+// main area
+.main {
+  padding: 2em 1em 0 1em;
+}
+
+.menu-label {
+  color: $cyan;
+  margin-left: .5em;
+}
+
+.label-small {
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+.block {
+  margin-top: .5em;
+}
+
+.is-custom {
+  background-color: lighten($main, 10%);
+}
